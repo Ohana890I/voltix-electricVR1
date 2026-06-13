@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Voltix Admin</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:
+    radial-gradient(
+    circle at top,
+    #0b2c57,
+    #07162d 70%
+    );
+}
+
+.login-box{
+
+    width:450px;
+
+    background:white;
+
+    border-radius:25px;
+
+    padding:50px;
+
+    text-align:center;
+
+    box-shadow:
+    0 25px 60px rgba(0,0,0,.25);
+}
+
+.logo{
+
+    font-size:70px;
+
+    margin-bottom:15px;
+}
+
+h1{
+
+    color:#07162d;
+
+    margin-bottom:10px;
+}
+
+.subtitle{
+
+    color:#666;
+
+    margin-bottom:35px;
+}
+
+input{
+
+    width:100%;
+
+    padding:16px;
+
+    border:2px solid #e5e7eb;
+
+    border-radius:14px;
+
+    font-size:17px;
+
+    margin-bottom:20px;
+}
+
+input:focus{
+
+    outline:none;
+
+    border-color:#ffc107;
+}
+
+button{
+
+    width:100%;
+
+    padding:16px;
+
+    background:#ffc107;
+
+    border:none;
+
+    border-radius:14px;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+button:hover{
+
+    transform:translateY(-2px);
+}
+
+.error{
+
+    color:red;
+
+    margin-top:15px;
+}
+
+.footer{
+
+    position:fixed;
+
+    bottom:20px;
+
+    left:0;
+    right:0;
+
+    text-align:center;
+
+    color:rgba(255,255,255,.7);
+
+    font-size:14px;
+
+    letter-spacing:1px;
+}
+
+.version{
+
+    display:block;
+
+    margin-top:5px;
+
+    font-size:12px;
+
+    opacity:.7;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="login-box">
+
+    <div class="logo">⚡</div>
+
+    <h1>Voltix Admin</h1>
+
+    <p class="subtitle">
+        כניסה למערכת הניהול
+    </p>
+
+    <input
+        type="password"
+        id="password"
+        placeholder="הכנס סיסמת מנהל"
+    >
+
+    <button onclick="login()">
+        כניסה למערכת
+    </button>
+
+    <div id="error" class="error"></div>
+
+</div>
+
+<footer class="footer">
+
+    © 2026 Voltix Electric
+
+    <span class="version">
+        כל הזכויות שמורות לעילאי אוחנה
+    </span>
+
+</footer>
+
+<script>
+
+function login(){
+
+    const password =
+    document.getElementById('password').value;
+
+    if(password === 'ניסוי'){
+
+        window.location.href =
+        'dashboard.html';
+
+    }else{
+
+        document.getElementById('error')
+        .innerText =
+        'סיסמה שגויה';
+    }
+}
+
+</script>
+
+</body>
+</html>

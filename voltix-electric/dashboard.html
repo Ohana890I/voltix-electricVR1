@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Voltix Dashboard</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f4f7fb;
+}
+
+.sidebar{
+position:fixed;
+right:0;
+top:0;
+width:260px;
+height:100vh;
+background:#07162d;
+padding:30px;
+color:white;
+}
+
+.sidebar h2{
+color:#ffc107;
+margin-bottom:40px;
+}
+
+.sidebar a{
+display:block;
+color:white;
+text-decoration:none;
+margin-bottom:20px;
+}
+
+.main{
+margin-right:260px;
+padding:40px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-bottom:40px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.card h3{
+margin-bottom:10px;
+}
+
+.card p{
+font-size:35px;
+font-weight:bold;
+color:#ffc107;
+}
+
+.section{
+background:white;
+padding:25px;
+border-radius:20px;
+margin-bottom:25px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.footer{
+text-align:center;
+padding:25px;
+color:#666;
+}
+
+
+.item{
+
+padding:20px;
+
+margin-bottom:15px;
+
+border-radius:15px;
+
+background:#f8fafc;
+
+border-right:4px solid #ffc107;
+
+line-height:1.8;
+}
+
+
+
+
+.delete-btn{
+  background:#ef4444;
+  color:white;
+  border:none;
+  padding:10px 15px;
+  border-radius:10px;
+  cursor:pointer;
+  font-weight:bold;
+}
+
+</style>
+
+</head>
+
+
+<script
+type="module"
+src="/src/admin-dashboard.js">
+</script>
+
+
+
+
+
+
+
+<body>
+
+<div class="sidebar">
+
+<h2>⚡ Voltix</h2>
+
+<a href="#">📨 פניות</a>
+<a href="#">⭐ ביקורות</a>
+
+
+</div>
+
+<div class="main">
+
+<h1>פאנל ניהול</h1>
+
+<br>
+
+<div class="cards">
+
+<div class="card">
+<h3>פניות</h3>
+<p id="contactsCount">0</p>
+</div>
+
+<div class="card">
+<h3>ביקורות</h3>
+<p id="reviewsCount">0</p>
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>📨 פניות אחרונות</h2>
+
+<br>
+
+<div id="contactsList">
+
+אין פניות עדיין
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>⭐ ביקורות אחרונות</h2>
+
+<br>
+
+<div id="reviewsList">
+
+אין ביקורות עדיין
+
+</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+© 2026 Voltix Electric | כל הזכויות שמורות לעילאי אוחנה
+</div>
+
+</body>
+
+</html>
