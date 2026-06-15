@@ -701,3 +701,129 @@ html{
     box-shadow:
     0 10px 25px rgba(255,193,7,.4);
 }
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:768px){
+
+  .hero{
+    min-height:70vh;
+    padding:40px 20px;
+  }
+
+  .hero h1{
+    font-size:42px;
+  }
+
+  .hero p{
+    font-size:18px;
+  }
+
+  .services h2,
+  .gallery h2,
+  .contact-box h2{
+    font-size:36px;
+  }
+
+  .service-card{
+    padding:25px;
+  }
+
+  .service-card h3{
+    font-size:22px;
+  }
+
+  .gallery-card{
+    height:250px;
+  }
+
+  .stat-box{
+    padding:25px;
+  }
+
+  .stat-box h3{
+    font-size:40px;
+  }
+
+  .contact-box{
+    padding:25px;
+  }
+
+  .review-form{
+    padding:25px;
+  }
+
+  .rating-stars{
+    font-size:40px;
+  }
+
+  .review-card{
+    padding:20px;
+  }
+
+  .phone-btn{
+    width:100%;
+    text-align:center;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.floating-whatsapp{
+  position:fixed;
+  left:20px;
+  bottom:20px;
+
+  width:70px;
+  height:70px;
+
+  border-radius:50%;
+
+  background:#25D366;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  font-size:34px;
+
+  text-decoration:none;
+
+  box-shadow:0 10px 30px rgba(0,0,0,.3);
+
+  z-index:9999;
+
+  transition:.3s;
+}
+
+.floating-whatsapp:hover{
+  transform:scale(1.1);
+}
